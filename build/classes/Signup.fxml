@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignupController">
+   <children>
+      <VBox layoutX="61.0" layoutY="121.0" prefHeight="200.0" prefWidth="110.0" spacing="30.0">
+         <children>
+            <Label text="Name:" />
+            <Label text="username" />
+            <Label text="password" />
+            <Label text="Renter Password" />
+         </children>
+      </VBox>
+      <VBox layoutX="162.0" layoutY="121.0" prefHeight="200.0" prefWidth="179.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtname" />
+            <TextField fx:id="txtusername" />
+            <PasswordField fx:id="txtpassword" />
+            <PasswordField fx:id="txtpassword1" />
+         </children>
+      </VBox>
+      <Button fx:id="btncreate" layoutX="61.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Create an account" />
+      <Button fx:id="btnlogin" layoutX="229.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Login" />
+      <Label layoutX="217.0" layoutY="32.0" prefHeight="17.0" prefWidth="110.0" text="Signup Form">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
